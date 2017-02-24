@@ -1,4 +1,6 @@
 <?php
+//tampilan berita
+
 $id = $_GET['id'];
 
 $konek = mysqli_connect("localhost", "root", "", "berita");
