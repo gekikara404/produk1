@@ -1,5 +1,7 @@
 <?php
 
+//untuk menghapus jangan edit yang lain ya
+
 $id = $_GET['id'];
 
 echo $id;
