@@ -18,7 +18,7 @@ if ($_SESSION['level'] != "admin") {
 <a href="login_m.php?op=out">Logout</a>
 
 
-<a href="post.php">Input Data Siswa</a>
+<a href="post.php">Post Berita</a>
 <hr>
 <form action="halaman.php" method="GET">
 	<input type="text" name="s">
