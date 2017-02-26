@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 25, 2017 at 10:21 AM
+-- Generation Time: Feb 26, 2017 at 09:06 AM
 -- Server version: 5.6.21
 -- PHP Version: 5.5.19
 
@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS `konten` (
   `judul` varchar(60) NOT NULL,
   `isi` text NOT NULL,
   `photo` text NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `konten`
@@ -39,7 +39,11 @@ CREATE TABLE IF NOT EXISTS `konten` (
 
 INSERT INTO `konten` (`id`, `judul`, `isi`, `photo`) VALUES
 (6, 'post 1', 'post 1 isi', '12046912_738799836264244_1942055125765770331_n.jpg'),
-(11, 'post 2', 'post 2 isi', 'andela.jpg');
+(11, 'post 2', 'post 2 isi', 'andela.jpg'),
+(12, 'post 3', 'post 3 isi', '11249228_432294283630125_1670117469533764289_n.jpg'),
+(13, 'post 4', 'post 4 isi', '11800487_883229185089820_3192076198552516606_n.jpg'),
+(14, 'post 5', 'post 5 si', 'ahh.jpg'),
+(15, 'post 6', 'post 6 isi', 'gekikara404.jpg');
 
 -- --------------------------------------------------------
 
@@ -84,7 +88,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `konten`
 --
 ALTER TABLE `konten`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=12;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=16;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
