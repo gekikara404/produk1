@@ -37,39 +37,32 @@ $jmlhasil = mysqli_num_rows($hasil);
 
 ?>
 
-<table border="1">
-	<tr>
-		<th>no</th>
-		<th>judul</th>
-		<th>post</th>
-	</tr>
+
 <?php
 
 if ($jmlhasil < 1) {
-	echo "<tr>";
-	echo "<td colspan='5'>data yang ada cari tidak ada</td>";
-	echo "</tr>";
-	}else{
 
+	echo "data yang ada cari tidak ada";
+
+}else{
 	//penomoran
 	$no = $posisi + 1;
 
 	//tampil nama, email dan pesan
 	while($data=mysqli_fetch_array($hasil)){
-		echo "<tr>";
-		echo "<td>$no</td>";
-		echo "<td>$data[judul]</td>";
-		echo "<td>
-				<a href='berita.php?id=$data[id]'>detail</a></td>";
-		echo "</tr>";
+		echo "judul : $data[judul]<br>";
+		echo "isi : $data[isi]<br>";
+		echo "<img src='img/$data[photo]' width='100px'><br>";
+		echo "<a href='berita.php?id=$data[id]'>lihat selengkapnya</a><hr>";
+		
 		$no++;
 
 	}
+
 }
 
 
 ?>
-</table>
 
 <?php
 //untuk pagging
